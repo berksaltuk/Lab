@@ -20,14 +20,14 @@ public class StudentSearch {
         throw new Exception("There is no student with the given name!");
     }
 
-    public ArrayList<Student> findAll(ArrayList<Student> students, String name) throws Exception {
+    public ArrayList<Student> findAll(ArrayList<Student> students, String name) throws Exception { // COMMENT
         ArrayList<Student> result = new ArrayList<Student>();
-        for (Student student: students)
+        for (Student student: students) // ALSO COMMENT
             if (student.getName().equals(name)) {
                 result.add(student);
             }
 
-        if (result.isEmpty()) {
+        if (result.isEmpty()) { // DETAILED COMMENT
             throw new Exception("There is no student with the given name!");
         }
         return result;
